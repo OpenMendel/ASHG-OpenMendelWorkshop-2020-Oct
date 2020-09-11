@@ -1,0 +1,1 @@
+Tutorial for SnpArrays.jl and VCFTools.jl.

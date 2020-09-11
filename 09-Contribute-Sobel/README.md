@@ -1,0 +1,1 @@
+Remarks on how to contribute to OpenMendel.
