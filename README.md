@@ -39,7 +39,7 @@ To try the Jupyter notebooks in cloud, click the Binder icon below:
 | 10 min | Import genotype data by SnpArrays.jl \[[ipynb](./04-SnpArrays-HZhou/SnpArraysTutorial.ipynb)\] \[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/04-SnpArrays-HZhou/SnpArraysTutorial.html)\] and VCFTools.jl \[[ipynb](./04-SnpArrays-HZhou/vcftools.ipynb)\] \[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/04-SnpArrays-HZhou/vcftools.html)\] | Hua Zhou |  |  
 | 10 min | Variance component models \[[ipynb](./05-VarianceComponent-Kim/VarianceComponentModels.ipynb)\] \[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/05-VarianceComponent-Kim/VarianceComponentModels.html)\] | Juhyun Kim |  |    
 | 10 min | GWAS for ordinal traits \[[ipynb](./06-OrdinalGWAS-German/ordinalgwas.ipynb)\] \[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/06-OrdinalGWAS-German/ordinalgwas.html)\]| Chris German |  |  
-| 10 min | GWAS by IHT \[[ipynb](./07-IHT-Chu/MendelIHT_tutorial.ipynb)\]\[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/07-IHT-Chu/MendelIHT_tutorial.html)\] | Ben Chu |  |  
+| 10 min | Genotype imputation and phasing \[[ipynb](./07-Impute-Chu/MendelImpute_tutorial.ipynb)\]\[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/07-IHT-Chu/MendelImpute_tutorial.html)\] | Ben Chu |  |  
 | 4 min | Ongoing work \[[ipynb]()\] \[[html]()\] | Xinkai Zhou |  |  
 | 4 min | Contribute to OpenMendel | Eric Sobel  |  |  
 
