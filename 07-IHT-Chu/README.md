@@ -1,1 +1,0 @@
-Tutorial for MendelGWAS.jl and MendelIHT.jl.
