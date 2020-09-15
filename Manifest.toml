@@ -820,7 +820,7 @@ version = "0.0.0"
 
 [[MendelImpute]]
 deps = ["CodecZlib", "Distances", "Documenter", "FileIO", "GeneticVariation", "GroupSlices", "JLD2", "JLSO", "LazyArrays", "Libdl", "LinearAlgebra", "ProgressMeter", "Random", "SnpArrays", "SpecialFunctions", "StatsBase", "VCFTools"]
-git-tree-sha1 = "6a921bf3d8275d90f5a9e14bcb57b8efe10fafb0"
+git-tree-sha1 = "6fb466236d8732a360b2f99eb6b1386cc41e6eee"
 repo-rev = "master"
 repo-url = "https://github.com/OpenMendel/MendelImpute.git"
 uuid = "e47305d1-6a61-5370-bc5d-77554d143183"
