@@ -936,12 +936,12 @@ uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 version = "1.3.0"
 
 [[OrdinalGWAS]]
-deps = ["CSV", "DataFrames", "Distributions", "LinearAlgebra", "OrdinalMultinomialModels", "Reexport", "SnpArrays", "StatsModels"]
-git-tree-sha1 = "f391d64f72ee2b7f77f5a77352f78ceb3d04f5b0"
+deps = ["CSV", "DataFrames", "Distributions", "GeneticVariation", "LinearAlgebra", "OrdinalMultinomialModels", "Reexport", "SnpArrays", "StatsModels", "VCFTools"]
+git-tree-sha1 = "37ff21dfe2c344175d076ff91467aa2e8d5facf8"
 repo-rev = "master"
 repo-url = "https://github.com/OpenMendel/OrdinalGWAS.jl"
 uuid = "00428148-03d9-50ae-bfb7-4a690d5612f1"
-version = "0.3.5"
+version = "0.4.0"
 
 [[OrdinalMultinomialModels]]
 deps = ["Distributions", "GLM", "Ipopt", "LinearAlgebra", "MathProgBase", "NLopt", "RDatasets", "Random", "Reexport", "StatsBase", "StatsModels"]
