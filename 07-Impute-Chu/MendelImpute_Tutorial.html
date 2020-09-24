@@ -11751,7 +11751,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Genotype-imputation-and-phasing">Genotype imputation and phasing<a class="anchor-link" href="#Genotype-imputation-and-phasing">&#182;</a></h1><p>This notebook showcases our software <a href="https://github.com/biona001/MendelImpute">MendelImpute.jl</a>, the fastest and most memory-efficient phasing/imputation software as of 2020. Our paper will be available on arxiv soon.</p>
+<h1 id="Genotype-imputation-and-phasing">Genotype imputation and phasing<a class="anchor-link" href="#Genotype-imputation-and-phasing">&#182;</a></h1><p>This notebook showcases our software <a href="https://github.com/biona001/MendelImpute.jl">MendelImpute.jl</a>, the fastest and most memory-efficient phasing/imputation software as of 2020. Our paper will be available on arxiv soon.</p>
 <h2 id="Package-installation">Package installation<a class="anchor-link" href="#Package-installation">&#182;</a></h2>
 </div>
 </div>
@@ -11819,7 +11819,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-data">Example data<a class="anchor-link" href="#Example-data">&#182;</a></h2><p>Using <a href="https://msprime.readthedocs.io/en/stable/">msprime</a> and our <a href="https://github.com/OpenMendel/VCFTools.jl">VCFTools.jl</a> package, the <code>simulate_data.ipynb</code> notebook simulated data for this demonstration. The result is stored in 3 files:</p>
+<h2 id="Example-data">Example data<a class="anchor-link" href="#Example-data">&#182;</a></h2><p>Using <a href="https://msprime.readthedocs.io/en/stable/">msprime</a> and our <a href="https://github.com/OpenMendel/VCFTools.jl">VCFTools.jl</a> package, the <code>simulate_data.ipynb</code> notebook simulated data for this demonstration:</p>
 <ul>
 <li><strong><code>ref.excludeTarget.vcf.gz</code></strong>: haplotype reference panel with 2400 samples on 36063 SNPs.</li>
 <li><strong><code>target.typedOnly.masked.vcf.gz</code></strong>: unphased target genotypes with 100 samples, 5000 SNPs, and 1% genotypes missing at random.</li>
@@ -11835,7 +11835,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Imputation-and-phasing">Imputation and phasing<a class="anchor-link" href="#Imputation-and-phasing">&#182;</a></h1><p>Now we illustrate how to use <code>MendelImpute.jl</code> for phasing and imputation.</p>
-<h2 id="Step-1:-Generate-.jlso-compressed-reference-panel">Step 1: Generate <code>.jlso</code> compressed reference panel<a class="anchor-link" href="#Step-1:-Generate-.jlso-compressed-reference-panel">&#182;</a></h2><p>MendelImpute requires one to pre-process the reference panel for faster reading. This is achieved via the <a href="https://openmendel.github.io/MendelImpute/dev/man/api/#MendelImpute.compress_haplotypes">compress_haplotypes</a> function.</p>
+<h2 id="Step-1:-Generate-.jlso-compressed-reference-panel">Step 1: Generate <code>.jlso</code> compressed reference panel<a class="anchor-link" href="#Step-1:-Generate-.jlso-compressed-reference-panel">&#182;</a></h2><p>MendelImpute requires one to pre-process the reference panel for faster reading. This is achieved via the <a href="https://openmendel.github.io/MendelImpute.jl/dev/man/api/#MendelImpute.compress_haplotypes">compress_haplotypes</a> function.</p>
 
 </div>
 </div>
@@ -11986,7 +11986,7 @@ Timings:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Manipulate:</strong> Genotype matrices permit all standard matrix operations, so users gain access to statistical analysis <em>immediately</em> after imputation.</p>
+<p><strong>Manipulate:</strong> Genotype matrices permit all standard matrix operations (BLAS, LAPACK...etc), so users gain access to statistical analysis <em>immediately</em> after imputation.</p>
 
 </div>
 </div>
@@ -15048,8 +15048,8 @@ beagle error = 0.0001827357679616227
 <li>Ultra-compressed file for phased genotypes.</li>
 <li>Imputation on dosage data</li>
 </ul>
-<p><strong>All code is on GitHub:</strong> <a href="https://github.com/OpenMendel/MendelImpute">https://github.com/OpenMendel/MendelImpute</a></p>
-<p><strong>Latest documentation:</strong> <a href="https://openmendel.github.io/MendelImpute/dev/">https://openmendel.github.io/MendelImpute/dev/</a></p>
+<p><strong>All code is on GitHub:</strong> <a href="https://github.com/OpenMendel/MendelImpute.jl">https://github.com/OpenMendel/MendelImpute.jl</a></p>
+<p><strong>Latest documentation:</strong> <a href="https://openmendel.github.io/MendelImpute.jl/dev/">https://openmendel.github.io/MendelImpute.jl/dev/</a></p>
 
 </div>
 </div>
