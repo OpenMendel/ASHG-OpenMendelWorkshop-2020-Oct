@@ -1,1 +1,1 @@
-This is palceholder file. Can be git removed.
+This is provides the slides for running jupyter notebooks
