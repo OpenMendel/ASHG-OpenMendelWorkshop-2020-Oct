@@ -35,7 +35,7 @@ To try the Jupyter notebooks in cloud, click the Binder icon below:
 |:-----------|:------------|:------------|:------------|    
 | 4 min | Overview of OpenMendel project \[[pdf](./01-OpenMendel-Lange/MendelWorkshop.pdf)\] | Kenneth Lange |  |  
 | 4 min | Using OpenMendel on biobank data \[[pdf](./02-Biobank-JZhou/02-OpenMendel@ASHG_Motivating-Examples_Zhou.pdf)\] | Jin Zhou |  |  
-| 4 min | Orientation of tutorials \[[ipynb]()\], \[[html]()\] | Janet Sinsheimer | |  
+| 4 min | Jupyter Notebooks\[[pdf](./03-Orientation-JSinsheimer/jupyternotebooksJSS10012020.pdf)\] | Janet Sinsheimer | |  
 | 10 min | Import genotype data by SnpArrays.jl \[[ipynb](./04-SnpArrays-HZhou/SnpArraysTutorial.ipynb)\] \[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/04-SnpArrays-HZhou/SnpArraysTutorial.html)\] and VCFTools.jl \[[ipynb](./04-SnpArrays-HZhou/vcftools.ipynb)\] \[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/04-SnpArrays-HZhou/vcftools.html)\] | Hua Zhou |  |  
 | 10 min | Variance component models \[[ipynb](./05-VarianceComponent-Kim/VarianceComponentModels.ipynb)\] \[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/05-VarianceComponent-Kim/VarianceComponentModels.html)\] | Juhyun Kim |  |    
 | 10 min | GWAS for ordinal traits \[[ipynb](./06-OrdinalGWAS-German/ordinalgwas.ipynb)\] \[[html](https://openmendel.github.io/ASHG-OpenMendelWorkshop-2020-Oct/06-OrdinalGWAS-German/ordinalgwas.html)\]| Chris German |  |  
