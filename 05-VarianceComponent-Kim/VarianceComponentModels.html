@@ -13826,14 +13826,14 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For simplicity, we have a vector of ones for the covariate matrix.</p>
+<p>Our covariate matrix includes a vector of ones, age, and sex. Both age and sex vectors are randomly generated.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># load package for random number generation</span>
@@ -13857,39 +13857,39 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[68]:</div>
+    <div class="prompt output_prompt">Out[89]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>379×3 Array{Float64,2}:
- 1.0  2.0  23.2566
- 1.0  1.0  29.3388
- 1.0  2.0  39.962
- 1.0  1.0  23.0914
- 1.0  1.0  31.443
- 1.0  1.0  35.3987
- 1.0  1.0  39.351
- 1.0  1.0  34.9509
- 1.0  1.0  30.7432
- 1.0  2.0  32.0631
- 1.0  1.0  36.1245
- 1.0  2.0  19.0497
- 1.0  2.0  29.3529
+ 1.0  2.0  25.6499
+ 1.0  1.0  16.1577
+ 1.0  2.0  36.3552
+ 1.0  1.0  36.4284
+ 1.0  1.0  24.9278
+ 1.0  2.0  37.5757
+ 1.0  2.0  12.4213
+ 1.0  1.0  24.3605
+ 1.0  1.0  24.7958
+ 1.0  2.0  23.4903
+ 1.0  2.0  35.4691
+ 1.0  1.0  34.2152
+ 1.0  1.0  36.4757
  ⋮         
- 1.0  2.0  28.1592
- 1.0  2.0  31.13
- 1.0  2.0  39.0543
- 1.0  1.0  35.4198
- 1.0  2.0  38.7342
- 1.0  2.0  39.9455
- 1.0  1.0  36.2693
- 1.0  2.0  29.7006
- 1.0  1.0  27.9253
- 1.0  2.0  32.1516
- 1.0  1.0  26.745
- 1.0  1.0  34.7604</pre>
+ 1.0  1.0  43.9638
+ 1.0  1.0  32.2308
+ 1.0  1.0  47.183
+ 1.0  1.0  27.2569
+ 1.0  2.0  12.1753
+ 1.0  1.0  23.5695
+ 1.0  2.0  20.9357
+ 1.0  2.0  45.7621
+ 1.0  1.0  21.9607
+ 1.0  2.0  34.1902
+ 1.0  1.0  40.7062
+ 1.0  2.0   7.11622</pre>
 </div>
 
 </div>
@@ -14332,7 +14332,6 @@ $$\hspace{5em}  \mathbf{y} = \mathbf{X}\mathbf{\beta} + \mathbf{g} + \mathbf{\ep
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># null data model has two variance components but no SNP fixed effects</span>
-<span class="c"># form data as VarianceComponentVariate matrix </span>
 <span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="n">ones</span><span class="p">(</span><span class="n">nobs</span><span class="p">)</span> <span class="n">sex</span> <span class="n">age</span><span class="p">]</span>
 <span class="n">nulldata</span> <span class="o">=</span> <span class="n">VarianceComponentVariate</span><span class="p">(</span><span class="n">pheno</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="n">Φgrm</span><span class="p">,</span> <span class="kt">Matrix</span><span class="p">(</span><span class="mf">1.0</span><span class="nb">I</span><span class="p">,</span> <span class="n">nobs</span><span class="p">,</span> <span class="n">nobs</span><span class="p">)))</span>
 <span class="n">nullmodel</span> <span class="o">=</span> <span class="n">VarianceComponentModel</span><span class="p">(</span><span class="n">nulldata</span><span class="p">)</span>
@@ -14596,6 +14595,14 @@ EXIT: Optimal Solution Found.
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the alternative model, we include genotypes of SNPs of interest in the covariate matrix.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[82]:</div>
@@ -14733,7 +14740,7 @@ EXIT: Optimal Solution Found.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The alternative model mean effects (a grand mean)</p>
+<p>The alternative model mean effects</p>
 
 </div>
 </div>
@@ -14970,7 +14977,7 @@ EXIT: Optimal Solution Found.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We see that adding the SNPs as a covariate to the model does not fit significantly better than the null model. In other words, the SNPs do not explain more of the variation in our trait.</p>
+<p>We see that adding the SNPs as covariates to the model does not fit significantly better than the null model. In other words, the SNPs do not explain more of the variation in our trait.</p>
 
 </div>
 </div>
