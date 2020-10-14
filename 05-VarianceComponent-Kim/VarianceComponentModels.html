@@ -13141,7 +13141,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[305]:</div>
+<div class="prompt input_prompt">In&nbsp;[379]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">versioninfo</span><span class="p">()</span>
@@ -13182,7 +13182,7 @@ Platform Info:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="VarianceComponentModels.jl">VarianceComponentModels.jl<a class="anchor-link" href="#VarianceComponentModels.jl">&#182;</a></h2><h3 id="Package-Features">Package Features<a class="anchor-link" href="#Package-Features">&#182;</a></h3><ul>
 <li><a href="https://openmendel.github.io/VarianceComponentModels.jl/latest/man/heritability/#Heritability-Analysis-1">Heritability analysis for quantitative traits</a> in genetics</li>
-<li><a href="">SNP association testing</a></li>
+<li>SNP association testing</li>
 <li>Maximum likelihood estimation (MLE) and restricted maximum likelihood estimation (REML) of mean parameters $B$ and variance component parameters $Σ$</li>
 <li>Allow constraints in the mean parameters $B$</li>
 <li>Choice of optimization algorithms: <a href="https://books.google.com/books?id=QYqeYTftPNwC&amp;lpg=PP1&amp;pg=PA142#v=onepage&amp;q&amp;f=false">Fisher scoring</a> and <a href="http://hua-zhou.github.io/media/pdf/ZhouHuZhouLange19VCMM.pdf">minorization-maximization algorithm</a></li>
@@ -13195,7 +13195,7 @@ Platform Info:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://github.com/OpenMendel/VarianceComponentModels.jl/"><code>VarianceComponentModels.jl</code></a> is a package that resides in <a href="https://github.com/OpenMendel">OpenMendel</a> ecosystem. It implements computation routines for fitting and testing variance component model of form</p>
-$$Y \sim \text{Normal}(XB, \sigma_1^2 V_1 + \cdots + \sigma_m^2 V_m)$$<p>In this model, <strong>data</strong> is represented by</p>
+$$Y \sim \text{Normal}(XB, \sigma_1^2 V_1 + \cdots + \sigma_m^2 V_m).$$<p>In this model, <strong>data</strong> are represented by</p>
 <ul>
 <li>$Y$: continuously varying quantitative trait(s)</li>
 <li>$X$: covariates (e.g. sex, age, principal components)</li>
@@ -13204,7 +13204,7 @@ $$Y \sim \text{Normal}(XB, \sigma_1^2 V_1 + \cdots + \sigma_m^2 V_m)$$<p>In this
 <p>and <strong>parameters</strong> are</p>
 <ul>
 <li>$B$: mean fixed effects coefficient</li>
-<li>$\sigma_i^2$: $i$-th variance component $(i=1,\ldots, m)$</li>
+<li>$\sigma_i^2$: $i$-th variance component $(i=1,\ldots, m)$.</li>
 </ul>
 
 </div>
@@ -13237,7 +13237,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[306]:</div>
+<div class="prompt input_prompt">In&nbsp;[380]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">SnpArrays</span>
@@ -13250,7 +13250,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[307]:</div>
+<div class="prompt input_prompt">In&nbsp;[381]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">datapath</span> <span class="o">=</span> <span class="n">normpath</span><span class="p">(</span><span class="n">SnpArrays</span><span class="o">.</span><span class="n">datadir</span><span class="p">())</span>
@@ -13266,7 +13266,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[307]:</div>
+    <div class="prompt output_prompt">Out[381]:</div>
 
 
 
@@ -13284,14 +13284,14 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>EUR_subset.bed</code>, <code>EUR_subset.bim</code>, and <code>EUR_subset.fam</code> is a set of Plink files in binary format.</p>
+<p><code>EUR_subset.bed</code>, <code>EUR_subset.bim</code>, and <code>EUR_subset.fam</code> are the Plink binary files.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[308]:</div>
+<div class="prompt input_prompt">In&nbsp;[382]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">Glob</span>
@@ -13308,7 +13308,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[308]:</div>
+    <div class="prompt output_prompt">Out[382]:</div>
 
 
 
@@ -13343,7 +13343,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[309]:</div>
+<div class="prompt input_prompt">In&nbsp;[383]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># read in genotype data from Plink binary file</span>
@@ -13371,7 +13371,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[309]:</div>
+    <div class="prompt output_prompt">Out[383]:</div>
 
 
 
@@ -13437,7 +13437,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[310]:</div>
+<div class="prompt input_prompt">In&nbsp;[384]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">maf_EUR</span> <span class="o">=</span> <span class="n">maf</span><span class="p">(</span><span class="n">EUR_subset</span><span class="p">)</span>
@@ -13453,7 +13453,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[310]:</div>
+    <div class="prompt output_prompt">Out[384]:</div>
 
 
 
@@ -13513,20 +13513,20 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The above plot can be generated by using the command commented out below:</p>
+<p>The above plot can be generated by using the commands commented out below:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[342]:</div>
+<div class="prompt input_prompt">In&nbsp;[385]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># using Plots</span>
 <span class="c"># hist_maf = histogram(maf_EUR, xlab = &quot;Minor Allele Frequency (MAF)&quot;, </span>
-<span class="c">#                    ylab = &quot;Number of SNPs&quot;, label=&quot;&quot;)</span>
-<span class="c"># png(hist_maf, &quot;hist_MAF.png&quot;)</span>
+<span class="c">#                    ylab = &quot;Number of SNPs&quot;, label=&quot;&quot;) # generate histogram</span>
+<span class="c"># png(hist_maf, &quot;hist_MAF.png&quot;) # save as png file</span>
 </pre></div>
 
     </div>
@@ -13537,14 +13537,14 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note that about 29% of SNPs have their MAF &lt; 0.05.</p>
+<p>Note that about 29% of the SNPs have MAF &lt; 0.05.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[311]:</div>
+<div class="prompt input_prompt">In&nbsp;[386]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">count</span><span class="p">(</span><span class="o">!</span><span class="n">iszero</span><span class="p">,</span> <span class="n">maf_EUR</span> <span class="o">.&lt;</span> <span class="mf">0.05</span><span class="p">)</span> <span class="o">/</span> <span class="n">length</span><span class="p">(</span><span class="n">maf_EUR</span><span class="p">)</span>
@@ -13560,7 +13560,7 @@ $$h^2 = \frac{\sigma_a^2}{\sigma_a^2 + \sigma_e^2}.$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[311]:</div>
+    <div class="prompt output_prompt">Out[386]:</div>
 
 
 
@@ -13601,17 +13601,17 @@ $$\widehat{\Phi}_{GRMij} = \frac{1}{2S} \sum_{k=1}^S \frac{(G_{ik}-2p_k)(G_{jk}-
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The following command constructs the empirical kinship matrix using the above formula. Note that <code>grm</code> command excludes SNPs with minor allele frequency below 0.01. This can be changed by the keyword argument <code>minmaf</code>. For more information, see <a href="https://openmendel.github.io/SnpArrays.jl/latest/#Genetic-relationship-matrix-(GRM">SnpArrays.jl documentation</a>).</p>
+<p>Now we construct the empirical kinship matrix using the above formula. Note that <code>grm</code> command excludes SNPs with minor allele frequency below 0.01. This can be changed by the keyword argument <code>minmaf</code>. For more information, see <a href="https://openmendel.github.io/SnpArrays.jl/latest/#Genetic-relationship-matrix-(GRM">SnpArrays.jl documentation</a>).</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[312]:</div>
+<div class="prompt input_prompt">In&nbsp;[387]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="c">## GRM using SNPs with maf &gt; 0.01 (default) </span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># GRM using SNPs with maf &gt; 0.01 (default) </span>
 <span class="n">Φgrm</span> <span class="o">=</span> <span class="n">grm</span><span class="p">(</span><span class="n">EUR_subset</span><span class="p">;</span> <span class="n">method</span> <span class="o">=</span> <span class="o">:</span><span class="n">GRM</span><span class="p">)</span> <span class="c"># classical genetic relationship matrix</span>
 </pre></div>
 
@@ -13625,7 +13625,7 @@ $$\widehat{\Phi}_{GRMij} = \frac{1}{2S} \sum_{k=1}^S \frac{(G_{ik}-2p_k)(G_{jk}-
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[312]:</div>
+    <div class="prompt output_prompt">Out[387]:</div>
 
 
 
@@ -13676,7 +13676,7 @@ $$\widehat{\Phi}_{GRMij} = \frac{1}{2S} \sum_{k=1}^S \frac{(G_{ik}-2p_k)(G_{jk}-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[313]:</div>
+<div class="prompt input_prompt">In&nbsp;[388]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Φgrm = grm(EUR_subset; method = :MoM) # method of moment method</span>
@@ -13698,9 +13698,9 @@ $$\widehat{\Phi}_{GRMij} = \frac{1}{2S} \sum_{k=1}^S \frac{(G_{ik}-2p_k)(G_{jk}-
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We simulate phenotype vector from</p>
-$$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \mathbf{I})$$<p>where $\widehat{\Phi}_{GRM}$ is the estimated empirical kinship matrix <code>Φgrm</code>.</p>
-<p>The data should be available in <code>pheno.txt</code>.</p>
+<p>We simulate a phenotype vector from</p>
+$$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \mathbf{I})$$<p>where $\widehat{\Phi}_{GRM}$ is the estimated empirical kinship matrix <code>Φgrm</code> and $\mathbf{I}$ is the identity matrix.</p>
+<p>The simulated phenotype is available in <code>pheno.txt</code>.</p>
 
 </div>
 </div>
@@ -13722,7 +13722,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[314]:</div>
+<div class="prompt input_prompt">In&nbsp;[389]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">DelimitedFiles</span> 
@@ -13739,7 +13739,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[314]:</div>
+    <div class="prompt output_prompt">Out[389]:</div>
 
 
 
@@ -13799,19 +13799,19 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The above plot can be generated and saved using the command commented out below:</p>
+<p>The above plot can be generated and saved using the commands commented out below:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[315]:</div>
+<div class="prompt input_prompt">In&nbsp;[390]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># using Plots</span>
 <span class="c"># hist_pheno = histogram(pheno, xlab=&quot;Phenotype&quot;, ylab=&quot;Frequency&quot;, label=&quot;&quot;) # generate histogram</span>
-<span class="c"># png(hist_pheno, &quot;hist_pheno.png&quot;) # save as png file</span>
+<span class="c"># png(hist_pheno, &quot;hist_pheno.png&quot;) # save the plot as png file</span>
 </pre></div>
 
     </div>
@@ -13836,7 +13836,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[316]:</div>
+<div class="prompt input_prompt">In&nbsp;[391]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">VarianceComponentModels</span>
@@ -13857,15 +13857,16 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[317]:</div>
+<div class="prompt input_prompt">In&nbsp;[392]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># load package for random number generation</span>
 <span class="k">using</span> <span class="n">Random</span>
+<span class="c"># set seed </span>
 <span class="n">Random</span><span class="o">.</span><span class="n">seed!</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
 <span class="c"># no. of observations </span>
 <span class="n">nobs</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">pheno</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="c"># radomly generate covariates </span>
+<span class="c"># radomly generate age and sex vectors</span>
 <span class="n">age</span> <span class="o">=</span> <span class="mi">9</span><span class="o">*</span><span class="n">randn</span><span class="p">(</span><span class="n">nobs</span><span class="p">)</span> <span class="o">.+</span> <span class="mi">30</span>
 <span class="n">sex</span> <span class="o">=</span> <span class="n">bitrand</span><span class="p">(</span><span class="n">nobs</span><span class="p">)</span> <span class="o">.+</span> <span class="mi">1</span>
 <span class="c"># covariate matrix </span>
@@ -13882,7 +13883,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[317]:</div>
+    <div class="prompt output_prompt">Out[392]:</div>
 
 
 
@@ -13926,18 +13927,18 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now form an instance of VarianceComponentVariate by gathering our "data".  We plug in the phenotype vector <code>pheno</code>, covariate matrix <code>X</code> and two matrices corresponding to each variance component $(2\Phi, I)$: <code>(2Φgrm, Matrix(1.0I, nobs, nobs))</code>.</p>
+<p>Now form an instance of <code>VarianceComponentVariate</code> by gathering our data.  We plug in the phenotype vector <code>pheno</code>, covariate matrix <code>X</code> and two matrices corresponding to each variance component $(2\Phi, I)$: <code>(2Φgrm, Matrix(1.0I, nobs, nobs))</code>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[318]:</div>
+<div class="prompt input_prompt">In&nbsp;[393]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="c"># form instance of VarianceComponentVariate</span>
-<span class="k">using</span> <span class="n">LinearAlgebra</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">LinearAlgebra</span>
+<span class="c"># form instance of VarianceComponentVariate</span>
 <span class="n">EURdata</span> <span class="o">=</span> <span class="n">VarianceComponentVariate</span><span class="p">(</span><span class="n">pheno</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="n">Φgrm</span><span class="p">,</span> <span class="kt">Matrix</span><span class="p">(</span><span class="mf">1.0</span><span class="nb">I</span><span class="p">,</span> <span class="n">nobs</span><span class="p">,</span> <span class="n">nobs</span><span class="p">)))</span>
 </pre></div>
 
@@ -13951,7 +13952,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[318]:</div>
+    <div class="prompt output_prompt">Out[393]:</div>
 
 
 
@@ -13976,7 +13977,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Before fitting the variance component model, we pre-compute the eigen-decomposition of $2\Phi_{\text{GRM}}$, the rotated responses, and the constant part in log-likelihood, and store them as a TwoVarCompVariateRotate instance, which is re-used in various variane component estimation procedures.</p>
+<p>Before fitting the variance component model, we pre-compute the eigen-decomposition of $2\Phi_{\text{GRM}}$, the rotated responses, and the constant part in log-likelihood, and store them as a TwoVarCompVariateRotate instance, which is re-used in various variance component estimation procedures.</p>
 
 </div>
 </div>
@@ -13984,14 +13985,14 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We use Fisher scoring algorithm to fit variance component model for our trait.</p>
+<p>We use the Fisher scoring algorithm to fit variance component model for our trait.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[319]:</div>
+<div class="prompt input_prompt">In&nbsp;[394]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># pre-compute eigen-decomposition </span>
@@ -14027,7 +14028,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>  0.034314 seconds (18 allocations: 3.443 MiB)
+<pre>  0.032257 seconds (18 allocations: 3.443 MiB)
 (σ2a, σ2e) = (0.16153996925054054, 0.7622642974157461)
 </pre>
 </div>
@@ -14035,7 +14036,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[319]:</div>
+    <div class="prompt output_prompt">Out[394]:</div>
 
 
 
@@ -14060,7 +14061,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[320]:</div>
+<div class="prompt input_prompt">In&nbsp;[395]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">σ2a</span>
@@ -14076,7 +14077,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[320]:</div>
+    <div class="prompt output_prompt">Out[395]:</div>
 
 
 
@@ -14101,7 +14102,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[321]:</div>
+<div class="prompt input_prompt">In&nbsp;[396]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">σ2e</span>
@@ -14117,7 +14118,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[321]:</div>
+    <div class="prompt output_prompt">Out[396]:</div>
 
 
 
@@ -14132,14 +14133,21 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we get heritability estimate and the standard error.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[322]:</div>
+<div class="prompt input_prompt">In&nbsp;[397]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="c"># heritability and its standard error </span>
-<span class="n">h</span><span class="p">,</span> <span class="n">hse</span> <span class="o">=</span> <span class="n">heritability</span><span class="p">(</span><span class="n">trait_model</span><span class="o">.</span><span class="n">Σ</span><span class="p">,</span> <span class="n">Σcov</span><span class="p">)</span>
-<span class="p">[</span><span class="n">h</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">hse</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">h</span><span class="p">,</span> <span class="n">hse</span> <span class="o">=</span> <span class="n">heritability</span><span class="p">(</span><span class="n">trait_model</span><span class="o">.</span><span class="n">Σ</span><span class="p">,</span> <span class="n">Σcov</span><span class="p">)</span>
+<span class="p">[</span><span class="n">h</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">hse</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="c"># heritability estimate and standard error</span>
 </pre></div>
 
     </div>
@@ -14152,7 +14160,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[322]:</div>
+    <div class="prompt output_prompt">Out[397]:</div>
 
 
 
@@ -14179,7 +14187,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[323]:</div>
+<div class="prompt input_prompt">In&nbsp;[398]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">trait_model</span> <span class="o">=</span> <span class="n">VarianceComponentModel</span><span class="p">(</span><span class="n">trait_data</span><span class="p">)</span>
@@ -14203,7 +14211,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>  1.171228 seconds (111.83 k allocations: 9.029 MiB, 1.60% gc time)
+<pre>  0.730872 seconds (111.83 k allocations: 9.029 MiB)
 (σ2a, σ2e) = (0.17312796952899193, 0.7507276711209097)
 </pre>
 </div>
@@ -14211,7 +14219,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[323]:</div>
+    <div class="prompt output_prompt">Out[398]:</div>
 
 
 
@@ -14229,18 +14237,18 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Heritability and its standard error.</p>
+<p>Obtain heritability estimate and its standard error.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[324]:</div>
+<div class="prompt input_prompt">In&nbsp;[399]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">h</span><span class="p">,</span> <span class="n">hse</span> <span class="o">=</span> <span class="n">heritability</span><span class="p">(</span><span class="n">trait_model</span><span class="o">.</span><span class="n">Σ</span><span class="p">,</span> <span class="n">Σcov</span><span class="p">)</span>
-<span class="p">[</span><span class="n">h</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">hse</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+<span class="p">[</span><span class="n">h</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">hse</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="c"># heritability estimate and standard error</span>
 </pre></div>
 
     </div>
@@ -14253,7 +14261,7 @@ $$\mathbf{y} \sim \text{Normal}(\mathbf{1}, 0.1 \widehat{\Phi}_{GRM} + 0.9 \math
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[324]:</div>
+    <div class="prompt output_prompt">Out[399]:</div>
 
 
 
@@ -14340,7 +14348,7 @@ $$\hspace{5em}  \mathbf{y} = \mathbf{X}\mathbf{\beta} + \mathbf{g} + \mathbf{\ep
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[325]:</div>
+<div class="prompt input_prompt">In&nbsp;[400]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">VarianceComponentModels</span>
@@ -14353,13 +14361,16 @@ $$\hspace{5em}  \mathbf{y} = \mathbf{X}\mathbf{\beta} + \mathbf{g} + \mathbf{\ep
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[326]:</div>
+<div class="prompt input_prompt">In&nbsp;[401]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="c"># null data model has two variance components but no SNP fixed effects</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># covariate matrix without SNP information </span>
 <span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="n">ones</span><span class="p">(</span><span class="n">nobs</span><span class="p">)</span> <span class="n">sex</span> <span class="n">age</span><span class="p">]</span>
+<span class="c"># construct VarianceComponentVariate instance</span>
 <span class="n">nulldata</span> <span class="o">=</span> <span class="n">VarianceComponentVariate</span><span class="p">(</span><span class="n">pheno</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="n">Φgrm</span><span class="p">,</span> <span class="kt">Matrix</span><span class="p">(</span><span class="mf">1.0</span><span class="nb">I</span><span class="p">,</span> <span class="n">nobs</span><span class="p">,</span> <span class="n">nobs</span><span class="p">)))</span>
+<span class="c"># initialize model </span>
 <span class="n">nullmodel</span> <span class="o">=</span> <span class="n">VarianceComponentModel</span><span class="p">(</span><span class="n">nulldata</span><span class="p">)</span>
+<span class="c"># fit the model using Fisher scoring algorithm </span>
 <span class="nd">@time</span> <span class="n">nulllogl</span><span class="p">,</span> <span class="n">nullmodel</span><span class="p">,</span> <span class="o">=</span> <span class="n">fit_mle!</span><span class="p">(</span><span class="n">nullmodel</span><span class="p">,</span> <span class="n">nulldata</span><span class="p">;</span> <span class="n">algo</span><span class="o">=:</span><span class="n">FS</span><span class="p">)</span>
 </pre></div>
 
@@ -14416,18 +14427,18 @@ Number of inequality constraint evaluations          = 0
 Number of equality constraint Jacobian evaluations   = 0
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 11
-Total CPU secs in IPOPT (w/o function evaluations)   =      0.054
-Total CPU secs in NLP function evaluations           =      0.347
+Total CPU secs in IPOPT (w/o function evaluations)   =      0.053
+Total CPU secs in NLP function evaluations           =      0.323
 
 EXIT: Optimal Solution Found.
-  0.098329 seconds (12.62 k allocations: 4.373 MiB)
+  0.105506 seconds (12.62 k allocations: 4.373 MiB)
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[326]:</div>
+    <div class="prompt output_prompt">Out[401]:</div>
 
 
 
@@ -14452,7 +14463,7 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[327]:</div>
+<div class="prompt input_prompt">In&nbsp;[402]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">nulllogl</span>
@@ -14468,7 +14479,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[327]:</div>
+    <div class="prompt output_prompt">Out[402]:</div>
 
 
 
@@ -14493,7 +14504,7 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[328]:</div>
+<div class="prompt input_prompt">In&nbsp;[403]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">nullmodel</span><span class="o">.</span><span class="n">B</span>
@@ -14509,7 +14520,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[328]:</div>
+    <div class="prompt output_prompt">Out[403]:</div>
 
 
 
@@ -14537,7 +14548,7 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[329]:</div>
+<div class="prompt input_prompt">In&nbsp;[404]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">nullmodel</span><span class="o">.</span><span class="n">Σ</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -14553,7 +14564,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[329]:</div>
+    <div class="prompt output_prompt">Out[404]:</div>
 
 
 
@@ -14579,7 +14590,7 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[330]:</div>
+<div class="prompt input_prompt">In&nbsp;[405]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">nullmodel</span><span class="o">.</span><span class="n">Σ</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
@@ -14595,7 +14606,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[330]:</div>
+    <div class="prompt output_prompt">Out[405]:</div>
 
 
 
@@ -14628,13 +14639,18 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[331]:</div>
+<div class="prompt input_prompt">In&nbsp;[406]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">snp_mat</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">},</span> <span class="n">EUR_subset</span><span class="p">[</span><span class="o">:</span><span class="p">,</span> <span class="mi">10</span><span class="o">:</span><span class="mi">20</span><span class="p">])</span> 
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># extract genotypes of SNPs of interest </span>
+<span class="n">snp_mat</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">},</span> <span class="n">EUR_subset</span><span class="p">[</span><span class="o">:</span><span class="p">,</span> <span class="mi">10</span><span class="o">:</span><span class="mi">20</span><span class="p">])</span> 
+<span class="c"># covariate matrix with SNP information </span>
 <span class="n">Xalt</span> <span class="o">=</span> <span class="p">[</span><span class="n">ones</span><span class="p">(</span><span class="n">nobs</span><span class="p">)</span> <span class="n">sex</span> <span class="n">age</span> <span class="n">snp_mat</span><span class="p">]</span> 
+<span class="c"># construct VarianceComponentVariate instance</span>
 <span class="n">altdata</span> <span class="o">=</span> <span class="n">VarianceComponentVariate</span><span class="p">(</span><span class="n">pheno</span><span class="p">,</span> <span class="n">Xalt</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="n">Φgrm</span><span class="p">,</span> <span class="kt">Matrix</span><span class="p">(</span><span class="mf">1.0</span><span class="nb">I</span><span class="p">,</span> <span class="n">nobs</span><span class="p">,</span> <span class="n">nobs</span><span class="p">)))</span>
+<span class="c"># initialize model </span>
 <span class="n">altmodel</span> <span class="o">=</span> <span class="n">VarianceComponentModel</span><span class="p">(</span><span class="n">altdata</span><span class="p">)</span>
+<span class="c"># fit the model using Fisher scoring algorithm </span>
 <span class="nd">@time</span> <span class="n">altlogl</span><span class="p">,</span> <span class="n">altmodel</span><span class="p">,</span> <span class="o">=</span> <span class="n">fit_mle!</span><span class="p">(</span><span class="n">altmodel</span><span class="p">,</span> <span class="n">altdata</span><span class="p">;</span> <span class="n">algo</span><span class="o">=:</span><span class="n">FS</span><span class="p">)</span>
 </pre></div>
 
@@ -14691,18 +14707,18 @@ Number of inequality constraint evaluations          = 0
 Number of equality constraint Jacobian evaluations   = 0
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 13
-Total CPU secs in IPOPT (w/o function evaluations)   =      0.060
-Total CPU secs in NLP function evaluations           =      0.376
+Total CPU secs in IPOPT (w/o function evaluations)   =      0.067
+Total CPU secs in NLP function evaluations           =      0.442
 
 EXIT: Optimal Solution Found.
-  0.105133 seconds (14.55 k allocations: 5.188 MiB)
+  0.114052 seconds (14.55 k allocations: 5.188 MiB)
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[331]:</div>
+    <div class="prompt output_prompt">Out[406]:</div>
 
 
 
@@ -14720,14 +14736,14 @@ EXIT: Optimal Solution Found.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The alternative model log-likelihood:</p>
+<p>The alternative model log-likelihood</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[332]:</div>
+<div class="prompt input_prompt">In&nbsp;[407]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">altlogl</span>
@@ -14743,7 +14759,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[332]:</div>
+    <div class="prompt output_prompt">Out[407]:</div>
 
 
 
@@ -14768,7 +14784,7 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[333]:</div>
+<div class="prompt input_prompt">In&nbsp;[408]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">altmodel</span><span class="o">.</span><span class="n">B</span>
@@ -14784,7 +14800,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[333]:</div>
+    <div class="prompt output_prompt">Out[408]:</div>
 
 
 
@@ -14823,7 +14839,7 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[334]:</div>
+<div class="prompt input_prompt">In&nbsp;[409]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">altmodel</span><span class="o">.</span><span class="n">Σ</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -14839,7 +14855,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[334]:</div>
+    <div class="prompt output_prompt">Out[409]:</div>
 
 
 
@@ -14865,7 +14881,7 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[335]:</div>
+<div class="prompt input_prompt">In&nbsp;[410]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">altmodel</span><span class="o">.</span><span class="n">Σ</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
@@ -14881,7 +14897,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[335]:</div>
+    <div class="prompt output_prompt">Out[410]:</div>
 
 
 
@@ -14922,7 +14938,7 @@ EXIT: Optimal Solution Found.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[336]:</div>
+<div class="prompt input_prompt">In&nbsp;[411]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">Distributions</span>
@@ -14939,7 +14955,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[336]:</div>
+    <div class="prompt output_prompt">Out[411]:</div>
 
 
 
@@ -14957,14 +14973,14 @@ EXIT: Optimal Solution Found.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The associated p-value:</p>
+<p>The associated p-value</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[337]:</div>
+<div class="prompt input_prompt">In&nbsp;[412]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">pval</span> <span class="o">=</span> <span class="n">ccdf</span><span class="p">(</span><span class="n">Chisq</span><span class="p">(</span><span class="mi">11</span><span class="p">),</span> <span class="n">LRT</span><span class="p">)</span>
@@ -14980,7 +14996,7 @@ EXIT: Optimal Solution Found.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[337]:</div>
+    <div class="prompt output_prompt">Out[412]:</div>
 
 
 
