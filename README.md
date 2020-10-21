@@ -25,7 +25,7 @@ To try the Jupyter notebooks in cloud, click the Binder icon below:
 
 - Ask questions, file bug reports, and request new features by GitHub **Issues**.  
 
-- Get credit for you code contribution via GitHub **Fork** and **Pull Requests**. 
+- Get credit for your code contribution via GitHub **Fork** and **Pull Requests**. 
 
 - Want project ideas? Talk to any of us or come to OpenMendel Zoom meetings (every Wed).  
 
