@@ -21,6 +21,7 @@ SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
 TraitSimulation = "dec3038e-29bc-11e9-2207-9f3d5855a202"
+UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
 VCFTools = "a620830f-fdd7-5ebc-8d26-3621ab35fbfe"
 VarianceComponentModels = "813005db-34b4-5f71-be9e-1bbf0a1d8f1c"
 
