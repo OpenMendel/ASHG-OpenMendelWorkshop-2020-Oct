@@ -8,8 +8,12 @@ Professors Kenneth Lange (UCLA), Janet Sinsheimer (UCLA), Eric Sobel (UCLA), Jin
 
 ## How to run tutorials?
 
-To try the Jupyter notebooks in cloud, click the Binder icon below:  
+There are two ways to run the Jupyter notebook tutorials.
+
+1. To run the Jupyter notebooks in cloud, click the Binder icon below:  
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/master)
+
+2. To run Jupyter notebooks on your own machine, first `git clone https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct.git` to sync the most recent course materials to your computer then install all needed Julia packages.
 
 ## What is OpenMendel
 
@@ -31,18 +35,14 @@ To try the Jupyter notebooks in cloud, click the Binder icon below:
 
 ## Syllabus
 
-| Time | Topic | Presenter | Video |   
+| Time | Topic | Presenter | Slides |   
 |:-----------|:------------|:------------|:------------|    
-| 4 min | Overview of OpenMendel project \[[pdf](./01-OpenMendel-Lange/MendelWorkshop.pdf)\] | Kenneth Lange |  |  
-| 4 min | Using OpenMendel on biobank data \[[pdf](./02-Biobank-JZhou/02-OpenMendel@ASHG_Motivating-Examples_Zhou.pdf)\] | Jin Zhou |  |  
-| 4 min | Jupyter Notebooks\[[pdf](./03-Orientation-Sinsheimer/jupyternotebooksJSS10012020.pdf)\] | Janet Sinsheimer | |  
-| 10 min | Import genotype data by SnpArrays.jl \[[ipynb](./04-SnpArrays-HZhou/SnpArraysTutorial.ipynb)\] \[[html](https://htmlpreview.github.io/?https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/04-SnpArrays-HZhou/SnpArraysTutorial.html)\] and VCFTools.jl \[[ipynb](./04-SnpArrays-HZhou/vcftools.ipynb)\] \[[html](https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/04-SnpArrays-HZhou/SnpArraysTutorial.html)\] | Hua Zhou |  |  
-| 10 min | Variance component models \[[ipynb](./05-VarianceComponent-Kim/VarianceComponentModels.ipynb)\] \[[html](https://htmlpreview.github.io/?https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/05-VarianceComponent-Kim/VarianceComponentModels.html)\] | Juhyun Kim |  |    
-| 10 min | GWAS for ordinal traits \[[ipynb](./06-OrdinalGWAS-German/ordinalgwas.ipynb)\] \[[html](https://htmlpreview.github.io/?https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/06-OrdinalGWAS-German/ordinalgwas.html)\]| Chris German |  |  
-| 10 min | Genotype imputation and phasing \[[ipynb](./07-Impute-Chu/MendelImpute_Tutorial.ipynb)\]\[[html](https://htmlpreview.github.io/?https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/07-Impute-Chu/MendelImpute_Tutorial.html)\] | Ben Chu |  |  
-| 4 min | Ongoing work \[[ipynb]()\] \[[html]()\] | Xinkai Zhou |  |  
-| 4 min | Contribute to OpenMendel | Eric Sobel  |  |  
-
-## Run Jupyter notebooks on your own computer
-
-To run Jupyter notebooks on your own machine, simply `git clone https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct.git` to sync the most recent course materials to your computer and install all needed Julia packages.
+| 4 min | Overview of OpenMendel project | Kenneth Lange | \[[pdf](./01-OpenMendel-Lange/01-OpenMendel@ASHG_Introductory-Remarks_Lange.pdf)\] |  
+| 4 min | Using OpenMendel on biobank data | Jin Zhou | \[[pdf](./02-Biobank-JZhou/02-OpenMendel@ASHG_Motivating-Examples_Zhou.pdf)\] |  
+| 4 min | Jupyter Notebooks\[[pdf](./03-Orientation-Sinsheimer/jupyternotebooksJSS10012020.pdf)\] | Janet Sinsheimer | \[[pdf](./03-Orientation-Sinsheimer/03-OpenMendel@ASHG_Jupyternotebooks_Sinsheimer.pdf)\] |  
+| 10 min | Import genotype data by SnpArrays.jl \[[ipynb](./04-SnpArrays-HZhou/SnpArraysTutorial.ipynb)\] \[[html](https://htmlpreview.github.io/?https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/04-SnpArrays-HZhou/SnpArraysTutorial.html)\] and VCFTools.jl \[[ipynb](./04-SnpArrays-HZhou/vcftools.ipynb)\] \[[html](https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/04-SnpArrays-HZhou/SnpArraysTutorial.html)\] | Hua Zhou | \[[pdf](./04-SnpArrays-HZhou/04-OpenMendel@ASHG_Snparrays_Vcftools_Admixture_Zhou.pdf)\] |  
+| 10 min | Variance component models \[[ipynb](./05-VarianceComponent-Kim/VarianceComponentModels.ipynb)\] \[[html](https://htmlpreview.github.io/?https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/05-VarianceComponent-Kim/VarianceComponentModels.html)\] | Juhyun Kim | \[[pdf](./05-VarianceComponent-Kim/05-OpenMendel@ASHG_VCModels_Kim.pdf)\] |    
+| 10 min | GWAS for ordinal traits \[[ipynb](./06-OrdinalGWAS-German/ordinalgwas.ipynb)\] \[[html](https://htmlpreview.github.io/?https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/06-OrdinalGWAS-German/ordinalgwas.html)\]| Chris German | \[[pdf](./06-OrdinalGWAS-German/06-OpenMendel@ASHG_OrdinalGWAS_German.pdf)\] |  
+| 10 min | Genotype imputation and phasing \[[ipynb](./07-Impute-Chu/MendelImpute_Tutorial.ipynb)\]\[[html](https://htmlpreview.github.io/?https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/blob/master/07-Impute-Chu/MendelImpute_Tutorial.html)\] | Ben Chu | \[[pdf](./07-Impute-Chu/07-OpenMendel@ASHG_Imputation_Chu.pdf)\] |  
+| 4 min | Ongoing work | Xinkai Zhou | \[[pdf](./08-Ongoing-XZhou/08-OpenMendel@ASHG_TraitSim_BLB_Xinkai-Zhou.pdf)\] |  
+| 4 min | Contribute to OpenMendel | Eric Sobel | \[[pdf](./09-Contribute-Sobel/09-OpenMendel@ASHG_Concluding-Remarks_Sobel.pdf)\] |  
