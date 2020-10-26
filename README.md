@@ -10,11 +10,11 @@ Professors Kenneth Lange (UCLA), Janet Sinsheimer (UCLA), Eric Sobel (UCLA), Jin
 
 There are two ways to run the Jupyter notebook tutorials.
 
-1. To run the Jupyter notebooks in cloud, click the Binder icon below:  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/master)
+1. To run the Jupyter notebooks in cloud, click the Binder icon  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct/master)  
 and navigate to the Jupyter notebooks `ipynb` in each subfolder. Or click the Binder link below for each individual tutorial directly.
 
-1. To run Jupyter notebooks on your own machine, (1) first `git clone https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct.git` to sync the most recent course materials to your computer, (2) install all needed Julia packages by `using Pkg; Pkg.instantiate()`, (3) open individual notebook by `Using IJulia; notebook("pathtoipynb")`.
+2. To run Jupyter notebooks on your own machine, (1) first `git clone https://github.com/OpenMendel/ASHG-OpenMendelWorkshop-2020-Oct.git` to sync the most recent course materials to your computer, (2) install all needed Julia packages by `using Pkg; Pkg.instantiate()`, (3) open individual notebook by `Using IJulia; notebook("pathtoipynb")`.
 
 ## What is OpenMendel
 
